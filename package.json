@@ -1,0 +1,22 @@
+{
+  "name": "dev.tokar.unity_import_post_processor",
+  "version": "0.0.1",
+  "displayName": "Import Collider Postprocessor",
+  "description": "Unity editor import collider postprocessor.",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": ""
+  },
+  "samples": [],
+  "author": {
+    "name": "Oleksandr Tokar",
+    "email": "tokar.dev@gmail.com",
+    "url": "#"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "hideInEditor": false,
+  "type": "tool"
+}
