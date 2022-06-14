@@ -10,9 +10,10 @@ Create colliders low-poly meshes in your 3D editor. Name with preferred collider
 
 ![Example](https://github.com/Tokars/ImportColliderPostprocessor/blob/master/screenshots/blender_setup.gif)
 
-In a editor menu enable/disable post-processor hook
+In a unity editor menu enable/disable post-processor hook
 `Assets > PostProcess Collider Generation`.
 On model import settings `Generate Collider`.
+
 ![Example](https://github.com/Tokars/ImportColliderPostprocessor/blob/master/screenshots/unity_box_colliders.png)
 
 
