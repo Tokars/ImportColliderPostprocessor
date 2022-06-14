@@ -6,22 +6,23 @@ namespace OT.Import.Editor
 {
     public class GenerateColliderPostProcessor : AssetPostprocessor
     {
-        [MenuItem("Tools/Better Collider Generation")]
+        [MenuItem("Assets/PostProcess Collider Generation")]
         static void ToggleColliderGeneration()
         {
-            var betterColliderGenerationEnabled = EditorPrefs.GetBool("BetterColliderGeneration", false);
-            EditorPrefs.SetBool("BetterColliderGeneration", !betterColliderGenerationEnabled);
+            var betterColliderGenerationEnabled = EditorPrefs.GetBool(EditorPrefsBoolKey, false);
+            EditorPrefs.SetBool("PostProcessColliderGeneration", !betterColliderGenerationEnabled);
         }
 
-        [MenuItem("Tools/Better Collider Generation", true)]
+        [MenuItem("Assets/PostProcess Collider Generation", true)]
         static bool ValidateToggleColliderGeneration()
         {
-            var betterColliderGenerationEnabled = EditorPrefs.GetBool("BetterColliderGeneration", false);
-            Menu.SetChecked("Tools/Better Collider Generation", betterColliderGenerationEnabled);
+            var betterColliderGenerationEnabled = EditorPrefs.GetBool(EditorPrefsBoolKey, false);
+            Menu.SetChecked("Assets/PostProcess Collider Generation", betterColliderGenerationEnabled);
             return true;
         }
 
         private List<Transform> _transforms = new List<Transform>();
+        private const string EditorPrefsBoolKey = "PostProcessColliderGeneration";
         private const string Box = "ubx";
         private const string Capsule = "ucp";
         private const string Sphere = "usp";
