@@ -9,6 +9,7 @@ Create colliders low-poly meshes in your 3D editor. Name with preferred collider
 - `UMC_` is a mesh collider
 
 ![Example](https://github.com/Tokars/ImportColliderPostprocessor/blob/master/screenshots/blender_setup.gif)
+
 [Steel seat 3D Model](https://free3d.com/3d-model/steel-seat-359344.html)
 
 In a unity editor menu enable/disable post-processor hook
